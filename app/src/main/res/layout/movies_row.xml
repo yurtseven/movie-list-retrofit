@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movies_card_view"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#F3F3F3"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp"
+    app:contentPadding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movies_relativeLayout"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/movies_item_image"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/movies_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/movies_item_image"
+            app:layout_constraintStart_toStartOf="@+id/movies_item_image"
+            app:layout_constraintTop_toBottomOf="@+id/movies_item_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
