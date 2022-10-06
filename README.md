@@ -1,10 +1,25 @@
 # Movie List - Retrofit
 A project where we get data from the JSON API through Retrofit and list this data with RecyclerView.
 
+## Uses Permission
+```kotlin
+    <uses-permission android:name="android.permission.INTERNET" />
+```
+
+## Dependencies
+```kotlin
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    implementation 'com.squareup.picasso:picasso:2.8'
+```
+
 ## Project Features
 - Retrofit
 - JSON API
 - RecyclerView
+- Picasso
 - View Binding
 
 ## Screens
